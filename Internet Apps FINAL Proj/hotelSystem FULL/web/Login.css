@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 6, 2021, 10:23:38 PM
+    Author     : olasa
+*/
+body
+{
+    margin:0;
+    padding: 0;
+    background-image:url("HotelBackground.jpg");
+    background-repeat: no-repeat;   
+}
+
+form{
+    margin:6%
+}
+
+.login
+{
+    background: #1f222d;
+    color: white;  
+    font-weight: bold;
+    width: 320px;
+    margin-top: 100px;
+    margin-left:500px;
+    position: absolute;    
+}
+
+.photo
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 110px;
+    margin-top: -50px;
+    margin-bottom: 70px;    
+}
+
+.here
+{
+    margin-top: -60px;
+    font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    color:#00b6ff;    
+}
+
+.username
+{
+    margin-left: 10px;
+}
+
+.username input
+{
+    background: black;
+    color: white;
+    border-color: black;
+    border-bottom-color: white;
+    width:300px;
+    height: 30px;
+}
+
+.submit input
+{
+    background: #00b6ff;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border-color:black;
+    margin-top:20px;
+    font-style: italic;
+    margin-left:50px;
+    cursor: pointer;    
+}
+
+.pass,.acc
+{
+   margin-left: 10px;
+   font-style:italic;
+   color: white;
+}
+

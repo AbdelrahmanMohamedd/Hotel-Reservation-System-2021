@@ -1,0 +1,155 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-Jan-2021, 21:59:57
+    Author     : ag
+*/
+
+/*    STARS RATING VIEW */
+ 
+
+
+    .notation-block-star {
+    display: table;
+    margin: 0 auto;
+    width: inherit;
+    }
+
+    .notation-star {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Empty_Star.svg/2000px-Empty_Star.svg.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: table-cell; 
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    background-size: cover;
+    }
+
+    .notation-star:hover,
+    .notation-star:hover ~ .notation-star {
+    background-image: url("http://findicons.com/files/icons/1035/human_o2/128/bookmark_new.png");
+    }
+
+    .notation-star-selected {
+    background-image: url("../images/etoile_jaune.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: table-cell;
+    float: right;
+    height: 64px;
+    width: 64px;
+    padding: 0 5px;
+    }
+
+    .notation-star-selected  ~ .notation-star {
+    background-image: url("../images/etoile_jaune.png");
+    }
+    
+/*//////////////////////////////////*/
+
+.TableContainer {
+        margin-left: 150px;
+	float:inside;
+        align-content: center; 
+        font-size: 20px; 
+        font-family:Arial;
+        font-weight: 500;
+        color: #FFFFFF;    /*  whitesmoke*/ 
+        position: absolute;
+}
+
+  
+table {
+	width:1200px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+ 
+body {
+        font-family: Verdana, arial;
+	background: linear-gradient(45deg, #49a09d, #29487D);
+        height: 100%;
+}
+
+th,td {
+	padding: 15px;
+	background-color: rgba(0,0,0,0.2);
+	color: #fff;
+        text-align: center;
+} 
+
+.commentTXTbox{
+    font-size: 11pt; 
+    height: 80px; 
+    width: 350px;
+}
+ 
+
+.Reviewbtn:hover, .Reviewbtn:focus {
+    background-color: #3e8e41;
+}
+
+.Reviewbtn {
+    background-color: #71C4FE;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+}
+ 
+/*///////////////////////////////////////////////////////////*/
+   
+/*/////////STARS RATING BAR ////////////////////////////////////////////*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+ 
+ 
+.container{
+  position: relative;
+  width: 330px;
+  background: #111;
+  padding: 10px 25px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+   font-family: 'Poppins', sans-serif;
+}
+ 
+.container .star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 40px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+} 
+.container form{
+  display: none;
+}
+input:checked ~ form{
+  display: block;
+}
+  

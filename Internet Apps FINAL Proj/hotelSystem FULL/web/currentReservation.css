@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-Jan-2021, 01:56:06
+    Author     : ag
+*/
+
+
+
+
+
+ 
+body {
+	 
+	background: linear-gradient(45deg, #49a09d, #29487D);
+        height: 100%;
+}
+
+
+.currRescontainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+        font-weight: bold;
+        color: whitesmoke;
+        font-size: 20px; 
+        font-family:Arial;
+        font-weight: 500; 
+        align-content: center;
+}
+
+
+thead {
+background-color: #29487D;
+}
+
+table {
+	width:1200px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+        text-align: center;
+}
+
+ 
+
+
+ 

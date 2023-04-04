@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--      V3
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+  <html>
+            <script type="text/javascript">  
+                function MailNPassCorrect() { 
+                    Email = document.getElementById('u_email');
+                    password = document.getElementById('password');
+                    form = document.getElementById('loginform');
+                    if(Email.value.length === 0 || password.value.length === 0){ 
+                        alert("Enter your mail or password is empty!  ");
+                        }
+                    else if (password.value === 'password') {
+                        alert('"Password" word cannot be "password" word, this is for security');
+                    }
+                    else{
+                      form.submit();
+                        }
+                }
+             </script>
+        <head>
+            <title> log in </title>
+             <link rel="icon" href="womanLogo.png" type="image/png">    <!-- page title logo --> 
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="Login.css"/>
+        </head>
+        
+        <body>
+            <form id="loginform" action="validate">
+                <div class="login">
+                    <img class="photo" src="login.jpg" >
+                    <div class=here >Hotel Reservation</div>
+            
+                    <div class="username">
+                        <p> Email or Username</p>
+                        <input type="text" name="u_email" id="u_email" placeholder="Email or username"  maxlength="45" required>
+                        <p> password</p>
+                        <input type="password" name="password" id="password" placeholder=" password"   maxlength="45" required >
+                    </div><br>
+                    <div class="submit"><input type="submit" value="log in" onclick='MailNPassCorrect()'>
+                    </div>                   
+                    <br>
+                    <p class="acc">Don't have account?</p>
+                    <a class="acc" href="signup.jsp">Sign up</a>
+                </div> 
+            </form>   
+        </body>
+    </html>
